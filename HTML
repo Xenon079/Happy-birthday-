@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday [Name]!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, [Name]!</h1>
+        <p>Wishing you a day filled with love, joy, and cake!</p>
+
+        <!-- Image Gallery -->
+        <div class="gallery">
+            <img src="image1.jpg" alt="Memory 1">
+            <img src="image2.jpg" alt="Memory 2">
+            <img src="image3.jpg" alt="Memory 3">
+        </div>
+
+        <!-- Birthday Messages -->
+        <div class="messages">
+            <h2>Birthday Wishes</h2>
+            <div id="message-list">
+                <!-- Messages will be added here -->
+            </div>
+            <textarea id="message-input" placeholder="Write your message here..."></textarea>
+            <button onclick="addMessage()">Send</button>
+        </div>
+
+        <!-- Optional Music Player -->
+        <div class="music-player">
+            <audio controls>
+                <source src="birthday-song.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
