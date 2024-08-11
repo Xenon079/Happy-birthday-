@@ -1,0 +1,11 @@
+function addMessage() {
+    const messageList = document.getElementById('message-list');
+    const messageInput = document.getElementById('message-input');
+
+    if (messageInput.value.trim() !== "") {
+        const newMessage = document.createElement('p');
+        newMessage.textContent = messageInput.value;
+        messageList.appendChild(newMessage);
+        messageInput.value = '';
+    }
+}
